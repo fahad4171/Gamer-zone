@@ -76,6 +76,7 @@ nav img {
 }
 .follow-us {
     display: flex;
+    align-items: center;
     gap: 20px;
     background: rgb(221, 219, 219);
     list-style: none;
@@ -102,4 +103,56 @@ h1 {
 .banner-btn {
     margin-top: 35px;
     row-gap: 25px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/*----------- RESPONSIVENESS -------- */
+
+/* --For MOBILE---
+------------------------------- */
+@media only screen and (max-width:576px) {
+
+    /* Navigation */
+    nav {
+        flex-direction: column;
+    }
+    .nav-list {
+        flex-direction: column;
+    }
+
+    /* Banner */
+    .banner {
+        flex-direction:column-reverse;
+        gap: 30px;
+        padding: 0px;
+        margin-top: 50px;
+        
+    }
+    .banner img {
+        width: 400px;
+    }
+}
+
+/* ---For TABLET---
+--------------------------------  */
+@media only screen and (min-width:576px)and (max-width:992px) {
+    
+    /* Navigation */
+    nav {
+        margin: 10px 30px;
+    }
+    /* Banner */
+    .banner {
+        padding: 25px 30px;  
+        gap: 15px;
+    }
+    .banner img {
+        width: 350px;
+
+    }
 }
