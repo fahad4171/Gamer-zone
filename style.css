@@ -246,8 +246,51 @@ figcaption {
 .game-info {
     color: #0B0223;
     font-size: 15px;
-    font-weight: 500;
-    
+    font-weight: 500;   
+}
+
+/* FOOTER SECTION */
+footer {
+    background: #0B0223;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 300px;
+    row-gap: 40px;
+
+}
+.left-nav {
+    display: flex;
+    gap: 20px;
+}
+.h2-footer{
+        font: 60px;
+        font-weight: 700;
+        color: #fff;
+    }
+.service {
+    display: flex;
+    font-size: 18px;
+    column-gap: 40px;
+    font-weight: 600;
+}
+.service a {
+    text-decoration: none;
+    color: #FFF;
+}
+.social-logo {
+    font-size: 40px; 
+}
+.social-logo a {
+    margin-right: 40px;
+}
+.policy {
+    display: flex;
+    color: #ffffff99;
+    column-gap: 40px;
+}
+.sm-text {
+    color: #ffffff99;;
 }
  
 
@@ -339,8 +382,28 @@ figcaption {
         font: 10px;
         font-weight: 400px;
     }
-    
-   
+    /* FOOTER SECTION */
+    footer {
+        padding: 50px 20px;
+    }
+    .service {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 15px;
+    }
+    .social-logo {
+        font-size: 30px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 20px;
+        text-align: center;
+    }
+    .policy {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 20px;
+        text-align: center;
+    }
     }
 
 
@@ -406,4 +469,8 @@ figcaption {
         grid-template-columns: repeat(4, 1fr);
     }
 
+    /* FOOTER SECTION */
+    footer {
+        padding: 50px 20px;
+    }
 }
