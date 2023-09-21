@@ -128,10 +128,6 @@ h1 {
     row-gap: 25px;
 }
 
-.hidden {
-    display: none;
-}
-
 /* GAMER section */
 .gamer {
     background:#ff42a508;
@@ -150,7 +146,7 @@ h1 {
 /* FUNNY VIDEO Section */
 .video-section {
     text-align: center;
-    padding: 25px 160px;
+    margin: 25px 160px;
 }
 .video-collection {
     display: flex;
@@ -176,7 +172,7 @@ figcaption {
 
 .video {
     position: relative;
-    width: 50%
+    width: 50%;
 }
 .video button {
     background: none;
@@ -197,8 +193,35 @@ figcaption {
     cursor: pointer;
     border-radius: 100%;
     background: none;
+}
+
+/* PLAY INSTANTLY Section */
+.play-section {
+    display: flex;
+    align-items: center;
+    margin: 100px 140px;
+    gap: 200px;
     
 }
+.play-info {
+    text-align: right;
+    
+}   
+.images {
+   position: relative;
+}
+ .large-img {
+    width: 450px;
+}
+
+.small-img {
+    width: 220px;
+    position: absolute;
+    top: 55%;
+    right: 70%;
+}
+ 
+
 
 
 /*----------- RESPONSIVENESS -------- */
@@ -219,11 +242,12 @@ figcaption {
     .banner {
         flex-direction:column-reverse;
         gap: 30px;
-        padding: 0px;
+        padding: 0px 20px;
         margin-top: 50px; 
     }
     .banner img {
         width: 100%;
+        
     }
 
     /* Gamer section */
@@ -240,18 +264,40 @@ figcaption {
 
     /* Funny video Section */
     .video-section {
-        padding: 0px 10px;
+        margin: 0px 20px;
+        
     }
     .video-collection {
         flex-direction: column;
         align-items: center;
+        
     }
     .video-info {
         transform: translate(-20%, -55%);
     }
-}
 
-/* ---For TABLET---
+    /* PLAY section */
+    .play-section {
+        flex-direction: column;
+        margin: 10px 30px;
+        gap: 30px;
+
+    }
+    .play-info {
+        text-align: center;
+    }
+    
+    .large-img {
+        width: 250px;
+    }
+    .small-img {
+        width: 120px;
+    }
+        
+    }
+
+
+/*-------- ---For TABLET---------------
 --------------------------------  */
 @media only screen and (min-width:576px)and (max-width:992px) {
     
@@ -277,15 +323,31 @@ figcaption {
     }
 
     /* Funny video Section */
-    .video-section {
-        padding: 0px 50px 0px 100px;
+    .video-section  {
+        margin: 50px 20px;
     }
     .video-collection {
         display: grid;
+        padding: 20px 50px 0px 70px;
         grid-template-columns: repeat(2, 1fr);
     }
     .video-info {
-        transform: translate(15%, -60%);
-
+        transform: translate(15%, -60%);  
+}
+    /* PLAY SECTION */
+    .play-section {
+        margin: 10px 30px;
+        gap: 60px;
+    }
+    .play-info {
+        text-align: right;
+        padding-right: 50px;
+    }
     
+    .large-img {
+        width: 250px;
+    }
+    .small-img {
+        width: 120px;
+    }
 }
